@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .row.content {height: 1500px}
+    .sidenav {
+      background-color: #f2f2f2;
+      height: 100%;
+    }
+    footer {
+      background-color: #545;
+      color: white;
+      padding: 16px;
+    }
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 16px;
+      }
+      .row.content {height: auto;}
+    }
+  </style>
+</head>
+<body>
+ 
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Мой крутой блог</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Главная</a></li>
+        <li><a href="#section2">Друзья</a></li>
+        <li><a href="#section3">Семья</a></li>
+        <li><a href="#section3">Фотки</a></li>
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Поищите чего-нибудь...">
+        <span class="input-group-btn">
+          <button ="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+ 
+    <div class="col-sm-9">
+      <h4><small>Последние сообщения</small></h4>
+      <hr>
+      <h2>Я люблю пиццу!</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Отправлено Артемом, 17.09.2016, 15:17.</h5>
+      <h5><span class="label label-danger">Food</span> <span class="label label-primary">Pizza</span></h5><br>
+      <p>После просмотра видоса на YouTube о том, как готовят итальянскую пиццу, решил попробовать сам. Очень вкусно!! Ссылка на видео ниже.</p>
+      <br><br>
+ 
+      <h4><small>Последние сообщения</small></h4>
+      <hr>
+      <h2>Конференция</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Отправлено Вероникой, 17.09.2016, 21:01.</h5>
+      <h5><span class="label label-success">C#</span></h5><br>
+      <p>Все-таки нововведения в язык у меня вызывают...дикий восторк! Молодцы ребята!</p>
+      <hr>
+ 
+      <h4>Оставить свой след:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Отправить</button>
+      </form>
+      <br><br>
+ 
+      <p><span class="badge">2</span> Комментарии:</p><br>
+ 
+      <div class="row">
+        <div class="col-sm-2 text-center">
+ 
+        </div>
+        <div class="col-sm-10">
+          <h4>Артур <small>17.09.2016, 15:23</small></h4>
+          <p>Жди нас в гости!</p>
+          <br>
+        </div>
+          <br>
+          <p><span class="badge">1</span> Комментарии:</p><br>
+          <div class="row">
+            <div class="col-sm-2 text-center">
+ 
+            </div>
+            <div class="col-xs-10">
+              <h4>Александр <small>17.09.2016,  21:11</small></h4>
+              <p>К сожалению, я так и не смог попасть. Расскажешь потом обо всем.</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<footer class="container-fluid">
+  <p>Все права защищены</p>
+</footer>
+ 
+</body>
+</html>
